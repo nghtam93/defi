@@ -222,6 +222,10 @@ $(document).ready(function(){
       })
     })
 
+    $('.home-banner .-arrow').click (function() {
+      $('html, body').animate({scrollTop: $('section.next').offset().top }, 500);
+    });
+
 });
 
 function matchHeight($o,m) {

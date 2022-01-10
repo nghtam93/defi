@@ -29,6 +29,13 @@
 
       <header class="header -fix">
         <div class="container d-flex align-items-center">
+          <div class="d-xl-none">
+            <div class="menu-mb__btn">
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+            </div>
+          </div>
 
           <h1 class="logo">
             <a href="index.html">
@@ -36,20 +43,10 @@
             </a>
           </h1> <!-- .logo -->
 
-          <div class="languages ms-lg-4 d-none d-sm-block">
-            <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""></div>
-            <div class="languages__content">
-              <p class="languages__text">Select language</p>
-              <ul class="">
-                <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
-                <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
-              </ul>
-            </div>
-          </div> <!-- .languages -->
-
-          <nav class="main__nav d-none d-lg-block">
+          <nav class="main__nav d-none d-xl-block">
             <ul class="el__menu">
               <li class="menu-item"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="voting.html">Voting</a></li>
               <li class="menu-item active"><a href="staking.html">Staking</a></li>
               <li class="menu-item"><a href="farming.html">Farming</a></li>
               <li class="menu-item has-sub">
@@ -64,19 +61,37 @@
           </nav>
 
           <div class="header__price ms-auto">
-            <img src="assets/img/header-price-img.png" width="28" height="28" alt="">
+            <img src="assets/img/header-price-img.png" width="29" height="32" alt="">
             <span class="">$0.01951</span>
           </div>
 
-          <a href="#" class="btn -wallet d-none d-lg-inline-block" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
-
-          <div class="d-lg-none d-lg-none">
-            <div class="menu-mb__btn">
-              <span class="iconz-bar"></span>
-              <span class="iconz-bar"></span>
-              <span class="iconz-bar"></span>
+          <a href="#" class="btn -wallet" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
+          <!-- <div class="-connected js-dropdown">
+            <div class="btn js-dropdown-selected -wallet d-flex align-items-center">
+              <span class="-txt me-2">0x...a78E</span>
+              <i class="icon-arrow-down"></i>
             </div>
-          </div>
+            <div class="-wallet__more js-dropdown-list">
+              <ul class="-list list-unstyled">
+                <li><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#mangeWallet">Wallet</a></li>
+                <li><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#mangeWallet">Transactions</a></li>
+                <li><a href="#">Your NTFs</a></li>
+                <li><a href="#" class="d-flex justify-content-between align-items-center">Make a Profile <span class="-required"></span></a></li>
+                <li><a href="#" class="d-flex justify-content-between align-items-center">Disconnect <i class="icon-logout"></i></a></li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="languages ms-lg-4 d-none d-lg-inline-block">
+            <div class="languages__label"><img src="./assets/flag/en.png" width="32" height="32" alt=""></div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="active"><a href=""><img src="./assets/flag/en.png" width="32" height="32" alt=""><span>English</span></a></li>
+                <li><a href=""><img src="./assets/flag/vi.png" width="32" height="32" alt=""><span>Vietnamese</span></a></li>
+              </ul>
+            </div>
+          </div> <!-- .languages -->
 
         </div>
       </header>
@@ -360,96 +375,78 @@
 
       <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-6">
-              <div class="footer__item">
-                <div class="footer__logo">
-                  <a href="index.html">
-                    <img src="images/footer-logo.png" alt="Logo">
-                  </a>
-                  <div class="languages -top ms-lg-4">
-                    <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""></div>
-                    <div class="languages__content">
-                      <p class="languages__text">Select language</p>
-                      <ul class="">
-                        <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
-                        <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
-                      </ul>
-                    </div>
-                  </div> <!-- .languages -->
+          <div class="footer-info">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="footer__item footer-info__txt">
+                  Create sustainable values for partners to ensure fair revenue sharing through a diverse ecosystem. Not only meeting the trend of the times but also satisfying the needs of users.
                 </div>
-                <div class="footer__text">Create sustainable values for partners to ensure fair revenue sharing through a diverse ecosystem. Not only meeting the trend of the times but also satisfying the needs of users.</div>
-              </div><!-- .footer__item -->
+              </div>
+              <div class="col-sm-6 col-lg-3 offset-lg-1">
+                <div class="footer__item">
+                  <div class="footer__title">CONTACT US</div>
+                  <div><a href="mailto:support@deffZone.com">Support@defibox.com.</a></div>
+                  <div><a href="tel:+447458149855">+447458149855</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer__item">
+                  <div class="footer__title">ABOUT US</div>
+                  <a href="https://docs.defibox.com/" target="_blank">Document</a>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-5 col-md-6">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="footer__item">
-                    <div class="footer__title">CONTACT US</div>
-                    <div><a href="mailto:support@deffZone.com">Support@deffZone.com.</a></div>
-                    <div><a href="tel:+447458149855">+447458149855</a></div>
-                  </div>
-                </div><!-- .col-md-6 -->
-                <div class="col-md-6">
-                  <div class="footer__item">
-                    <div class="footer__title">ABOUT US</div>
-                    <a href="https://docs.deffzone.com/" target="_blank">Document</a>
-                  </div>
-                </div><!-- .col-md-6 -->
-                <div class="col-md-12">
-                  <div class="footer__item">
-                    <hr>
-                    <div class="copyright__wrap">
-                      <div class="copyright">
-                          <p>Copyright © 2021 deffZone, All Rights Reserved</p>
-                      </div>
-
-                      <div class="footer__socical ms-auto">
-                        <ul class="">
-                          <li><a href="https://twitter.com/DeffZone" target="_blank"><img src="assets/img/twitter.svg" width="24" height="24" alt=""></a></li>
-                          <li><a href="https://t.me/DeffZoneAnn" target="_blank"><img src="assets/img/telegram.svg" width="24" height="24" alt=""></a></li>
-                          <li><a href="https://t.me/deffzonecommunity" target="_blank"><img src="assets/img/telegram.svg" width="24" height="24" alt=""></a></li>
-                          <li><a href="https://medium.com/@deffzone.com" target="_blank"><img src="assets/img/medium.svg" width="24" height="24" alt=""></a></li>
-                          <li><a href="https://www.youtube.com/c/DeffZone" target="_blank"><img src="assets/img/youtube.svg" width="24" height="24" alt=""></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div><!-- .footer__item -->
-                </div> <!-- .col-md-12 -->
-              </div> <!-- .row -->
-            </div> <!-- .col-md-5 -->
-          </div> <!-- .row -->
+          </div><!-- footer-info -->
+          <div class="footer-bottom d-lg-flex align-items-center justify-content-between">
+            <div class="footer__logo">
+              <a href="index.html">
+                <img src="images/footer-logo.png" alt="Logo">
+              </a>
+            </div><!-- footer__logo -->
+            <div class="footer__social">
+              <ul class="-list">
+                <li><a href="#" target="_blank"><img src="assets/img/telegram.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/youtube.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/medium.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/twitter.svg" width="24" height="24" alt=""></a></li>
+              </ul>
+            </div><!-- footer__socical -->
+            <div class="copyright">
+              <p>Copyright © 2021 DefiBox, All Rights Reserved</p>
+            </div><!-- copyright -->
+          </div><!-- footer-bottom -->
         </div>
       </footer>
 
       <nav id="menu__mobile" class="nav__mobile">
-          <div class="nav__mobile__content">
-            <ul class="nav__mobile--ul">
-              <li class="menu-item"><a href="index.html">Home</a></li>
-              <li class="menu-item active"><a href="staking.html">Staking</a></li>
-              <li class="menu-item"><a href="farming.html">Farming</a></li>
-              <li class="menu-item js-toggle">
-                <a href="javascript: void(0);" class="js-toggle-btn">Swap</a>
-                <ul class="sub-menu js-toggle-show">
-                  <li><a href="swap.html">Exchange</a></li>
-                  <li><a href="liquidity.html">Liquidity</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
-            </ul>
-            <div class="languages ms-0 mt-3 mb-3">
-              <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""></div>
-              <div class="languages__content">
-                <p class="languages__text">Select language</p>
-                <ul class="">
-                  <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
-                  <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
-                </ul>
-              </div>
-            </div> <!-- .languages -->
+        <div class="nav__mobile__content">
+          <ul class="nav__mobile--ul">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="voting.html">Voting</a></li>
+            <li class="menu-item active"><a href="staking.html">Staking</a></li>
+            <li class="menu-item"><a href="farming.html">Farming</a></li>
+            <li class="menu-item js-toggle">
+              <a href="javascript: void(0);" class="js-toggle-btn">Swap</a>
+              <ul class="sub-menu js-toggle-show">
+                <li><a href="swap.html">Exchange</a></li>
+                <li><a href="liquidity.html">Liquidity</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
+          </ul>
+          <div class="languages">
+            <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""></div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
+                <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
+              </ul>
+            </div>
+          </div> <!-- .languages -->
 
-            <a href="#" class="btn -wallet w-100" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
-          </div>
+          <a href="#" class="btn -wallet w-100" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
+        </div>
       </nav>
     </div> <!-- .wrapper -->
 
