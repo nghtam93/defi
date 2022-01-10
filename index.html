@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DefiBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/image-featured.jpg">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
+  <body class="home modal-open">
+    <div class="wrapper">
+
+      <div class="loading-page">
+        <div class="loading-page__logo">
+          <img src="images/logo.png" alt="Logo">
+          <div class="text-center mt-3">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <header class="header -fix">
+        <div class="container d-flex align-items-center">
+          <div class="d-xl-none">
+            <div class="menu-mb__btn">
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+            </div>
+          </div>
+
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Logo">
+            </a>
+          </h1> <!-- .logo -->
+
+          <nav class="main__nav d-none d-xl-block">
+            <ul class="el__menu">
+              <li class="menu-item active"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="voting.html">Voting</a></li>
+              <li class="menu-item"><a href="staking.html">Staking</a></li>
+              <li class="menu-item"><a href="farming.html">Farming</a></li>
+              <li class="menu-item has-sub">
+                <a href="javascript: void(0);">Swap</a>
+                <ul class="sub-menu">
+                  <li><a href="swap.html">Exchange</a></li>
+                  <li><a href="liquidity.html">Liquidity</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__price ms-auto">
+            <img src="assets/img/header-price-img.png" width="29" height="32" alt="">
+            <span class="">$0.01951</span>
+          </div>
+
+          <a href="#" class="btn -wallet d-none d-sm-inline-block" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
+
+          <div class="languages ms-lg-4 d-none d-lg-inline-block">
+            <div class="languages__label"><img src="./assets/flag/en.png" width="32" height="32" alt=""></div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="active"><a href=""><img src="./assets/flag/en.png" width="32" height="32" alt=""><span>English</span></a></li>
+                <li><a href=""><img src="./assets/flag/vi.png" width="32" height="32" alt=""><span>Vietnamese</span></a></li>
+              </ul>
+            </div>
+          </div> <!-- .languages -->
+
+        </div>
+      </header>
+
+      <section class="home-banner">
+
+        <div class="home-banner__wrap">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-6 col-lg-52 order-lg-2 wow fadeIn sp-bottom">
+                <div class="el__thumb">
+                  <img src="assets/img/home-banner-img-1.png" class="el__thumb--1" alt="">
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-lg-44">
+                <div class="el__meta">
+                  <h2 class="el__title wow fadeInLeft"><strong>DefiBox</strong></h2>
+                  <div class="el__excerpt wow fadeInRight">Creating sustainable values for partners to ensure fair revenue sharing through a diverse ecosystem. Not only meeting the trend of the times but also satisfying users' needs.</div>
+                  <div class="-btn">
+                    <a href="#" class="btn -wallet wow fadeInUp" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect Wallet</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-voting">
+        <div class="container">
+          <div class="home-voting__wrap d-lg-flex align-items-start align-items-sm-center">
+            <div class="-icon d-flex align-items-center justify-content-center wow fadeInLeft"><img src="./images/home-voting-img-01.png" alt=""></div>
+            <div class="-info wow fadeInUp">
+              <div class="sc__header">
+                <h2 class="sc__header__title">Voting</h2>
+              </div>
+              <div class="-except">
+                DefiBox supports custodial staking and can cancel staking at any time. DEFF reward will be calculated at the time of staking cancellation. The DefiBox administration will likely allow voting to determine.
+              </div>
+            </div>
+            <div class="-btn">
+              <a href="voting.html" class="btn ms-auto wow fadeInRight"><span>Voting Now</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-ecosystem">
+        <div class="container">
+          <header class="sc__header">
+            <div class="sc__header__sub wow fadeInLeft">PROFESSIONAL SERVICES</div>
+            <h2 class="sc__header__title wow fadeInRight">Ecosystem</h2>
+          </header>
+
+          <div class="row row__item">
+            <div class="col-md-6">
+              <div class="el__item d-xl-flex align-items-md-center wow fadeInUp">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-ecosytem-img-01.png" alt="Staking">
+                  </div>
+                </div>
+                <div class="el__item__meta">
+                  <h3 class="el__item__title">Staking</h3>
+                  <div class="el__item__excerpt">
+                    DefiBox supports custodial staking and can cancel staking at any time. DEFF reward will be calculated at the time of staking cancellation. The DefiBox administration will likely allow voting to determine the staking cost structure.
+                  </div>
+                </div>
+              </div> <!-- .el__item -->
+            </div> <!-- .col-md-6 -->
+            <div class="col-md-6">
+              <div class="el__item d-xl-flex align-items-md-center wow fadeInUp">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-ecosytem-img-02.png" alt="Farming">
+                  </div>
+                </div>
+                <div class="el__item__meta">
+                  <h3 class="el__item__title">Farming</h3>
+                  <div class="el__item__excerpt">
+                    Users and holders can convert DEFF tokens into several LP tokens for compounding and more profit. If you only keep coins in the wallet, they can not be optimal for-profits; using our platform means that smart contracts will calculate the optimal rate and allow you to share the transaction fees from the DEFF allocation.
+                  </div>
+                </div>
+              </div><!-- .el__item -->
+            </div>
+            <div class="col-md-6">
+              <div class="el__item d-xl-flex align-items-md-center wow fadeInUp">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-ecosytem-img-03.png" alt="Swap">
+                  </div>
+                </div>
+                <div class="el__item__meta">
+                  <h3 class="el__item__title">Swap</h3>
+                  <div class="el__item__excerpt">
+                    DefiBox SWAP allows users to trade without going through centralized exchanges. Everything you do on DefiBox Swap is transferred directly to your wallet.
+                  </div>
+                </div>
+              </div><!-- .el__item -->
+            </div>
+            <div class="col-md-6">
+              <div class="el__item d-xl-flex align-items-md-center wow fadeInUp">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-ecosytem-img-04.png" alt="Wallet">
+                  </div>
+                </div>
+                <div class="el__item__meta">
+                  <h3 class="el__item__title">Wallet</h3>
+                  <div class="el__item__excerpt">
+                    DefiBox Wallet is a digital asset management platform supporting NFTs, tokens on different chains, and decentralized applications. DefiBox wallet will be available on mobile devices (iOS and Android), Chrome, and dapp browsers.
+                  </div>
+                </div>
+              </div><!-- .el__item -->
+            </div> <!-- .col-md-6 -->
+            <div class="col-md-6">
+              <div class="el__item d-xl-flex align-items-md-center wow fadeInUp">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-ecosytem-img-05.png" alt="Launchpad">
+                  </div>
+                </div>
+                <div class="el__item__meta">
+                  <h3 class="el__item__title">Launchpad</h3>
+                  <div class="el__item__excerpt">
+                    DefiBox Launchpad is an on-chain platform for crypto startups to raise capital through the IDO (Initial DEX Offering) process. Only those who lock DEFF tokens or win the whitelist can join IDO.
+                  </div>
+                </div>
+              </div><!-- .el__item -->
+            </div>
+            <div class="col-md-6">
+              <div class="el__item d-xl-flex align-items-md-center wow fadeInUp">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-ecosytem-img-06.png" alt="DefiBox Mobile App">
+                  </div>
+                </div>
+                <div class="el__item__meta">
+                  <h3 class="el__item__title">DefiBox Mobile App</h3>
+                  <div class="el__item__excerpt">
+                    The DefiBox Mobile App app is the Center of the DefiBox ecosystem. Its aim is to create a comprehensive information channel in the crypto market for the entire investment community as well as developers. The DefiBox Mobile App works based on the following items:Community, airdrops, news - Events, Press release, box sale app, presale NFT for all, review traffic all projects, check contract, fund communication, market.
+                  </div>
+                </div>
+              </div><!-- .el__item -->
+            </div>
+          </div><!-- .row -->
+
+        </div><!-- .container -->
+      </section>
+
+      <section class="home-work">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3">
+              <header class="sc__header">
+                <div class="sc__header__sub wow fadeInLeft">PROFESSIONAL MINING APP</div>
+                <h2 class="sc__header__title wow fadeInRight">How it work?</h2>
+              </header>
+            </div>
+            <div class="col-xl-9">
+              <div class="el__slider wow fadeInRight">
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-work-img-03.png" alt="">
+                    </div>
+                  </div>
+                  <div class="el__item__meta">
+                    <h3 class="el__item__title">Unlimited scalability</h3>
+                    <div class="el__item__excerpt">Enables you to link all apps on the same platform to yield more.</div>
+                  </div>
+                </div><!-- el__item -->
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-work-img-01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="el__item__meta">
+                    <h3 class="el__item__title">Build everything on decentralization</h3>
+                    <div class="el__item__excerpt">Decentralized non-custodial money market protocol</div>
+                  </div>
+                </div><!-- el__item -->
+                <div class="el__item">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-work-img-02.png" alt="">
+                    </div>
+                  </div>
+                  <div class="el__item__meta">
+                    <h3 class="el__item__title">Platform development on Binance Smart Chain</h3>
+                    <div class="el__item__excerpt">BSC(Binance Smart Chain) is the trend of the global financial technology platform to bring the community a range of benefits in the new business model.</div>
+                  </div>
+                </div><!-- el__item -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-com">
+        <div class="container">
+          <header class="sc__header text-center">
+            <div class="sc__header__sub wow fadeInLeft">PROFESSIONAL MINING APP</div>
+            <h2 class="sc__header__title wow fadeInRight">Competitive Advantage</h2>
+          </header>
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <div class="el__item js-max-height wow fadeInDown">
+                <div class="el__item__number">01</div>
+                <div class="el__item__info">
+                  <div class="-title">Experience in the field of Blockchain</div>
+                  <div class="-excerpt">
+                    The DefiBox team has built a flourishing DeFi ecosystem on the Tron network. They are highly experienced in finding the limitations of a project and have the perfect adaptability when developing the project—New on BSC. DefiBox is an improvement from working continuously to bring a unique experience that is suitable for the times and focuses on the interests of all participants.
+                  </div>
+                </div>
+              </div><!-- el__item -->
+            </div><!-- col-md-4 -->
+            <div class="col-md-4">
+              <div class="el__item wow fadeInUp">
+                <div class="el__item__number">02</div>
+                <div class="el__item__info">
+                  <div class="-title">Technology</div>
+                  <div class="-excerpt">
+                    DefiBox applies a new DeFi technology trend called DeFi 2.0 to overcome the old DeFi limitations. DeFi 2.0 will increase profits significantly more with a farm pool with APY up to tens of thousands or huge Airdrops to attract new users and create a source of liquidity for the market. Moreover, increasing decentralization is promoted by operating as a DAO (Decentralized Autonomous Organizations) where anyone can vote for the joint development. One more point for notice is when DeFi 2.0 can reach higher capital efficiency, this is also noted by DefiBox when building the overall mechanism for the project.
+                  </div>
+                </div>
+              </div><!-- el__item -->
+            </div><!-- col-md-4 -->
+            <div class="col-md-4">
+              <div class="el__item js-max-height wow fadeInDown">
+                <div class="el__item__number">03</div>
+                <div class="el__item__info">
+                  <div class="-title">Close relationship with major partners</div>
+                  <div class="-excerpt">
+                    The established relationships will help DefiBox have more facets and creativity in this entirely new operating model. Shorten the distance between the developer and the investor community, and increase the reliability of the project. One of the partners whom DefiBox is aiming at is Binance Exchange through its partner program.
+                  </div>
+                </div>
+              </div><!-- el__item -->
+            </div><!-- col-md-4 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="home-team">
+        <div class="container">
+          <header class="sc__header text-center">
+            <div class="sc__header__sub wow fadeInLeft">PROFESSIONAL SERVICES</div>
+            <h2 class="sc__header__title wow fadeInRight">Meet our team</h2>
+          </header>
+
+          <div class="home-team__slider d-flex flex-wrap justify-content-between">
+            <div class="slider-nav wow fadeInLeft">
+              <div class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/home-team-img-01.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/home-team-img-02.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/home-team-img-03.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/home-team-img-01.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="el__item">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb">
+                    <img src="images/home-team-img-02.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-for wow fadeInRight">
+              <div class="el__item">
+                <div class="el__item__wrap d-xl-flex align-items-center">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/home-team-img-01.png" alt="">
+                    </div>
+                  </div><!-- el__item__thumb -->
+                  <div class="el__item__content wow fadeInUp">
+                    <div class="-title">Robert MacAskill</div>
+                    <div class="-info">CO-FOUNDER & CEO of DefiBox</div>
+                    <ul class="-list list-unstyled">
+                      <li>Marketing and Sales Manager: Leisure Equity Marketing.</li>
+                      <li>Sales& Customer Complaints Manager Q-PHOTO.</li>
+                      <li>Insurance Broker: FIRST STEP FINANCIAL SERVICES.</li>
+                      <li>Sales Representative: PRE-EMPT SECURITY.</li>
+                      <li>Logistics Manager: Mobax Telecommunications.</li>
+                      <li>Master - Sales & Marketing management: University of Florida.</li>
+                    </ul>
+                  </div><!-- el__item__content -->
+                </div>
+              </div><!-- el__item -->
+              <div class="el__item">
+                <div class="el__item__wrap d-xl-flex align-items-center">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/home-team-img-02.png" alt="">
+                    </div>
+                  </div><!-- el__item__thumb -->
+                  <div class="el__item__content wow fadeInUp">
+                    <div class="-title">Robert MacAskill</div>
+                    <div class="-info">CO-FOUNDER & CEO of DefiBox</div>
+                    <ul class="-list list-unstyled">
+                      <li>Marketing and Sales Manager: Leisure Equity Marketing.</li>
+                      <li>Sales& Customer Complaints Manager Q-PHOTO.</li>
+                      <li>Insurance Broker: FIRST STEP FINANCIAL SERVICES.</li>
+                      <li>Sales Representative: PRE-EMPT SECURITY.</li>
+                      <li>Logistics Manager: Mobax Telecommunications.</li>
+                      <li>Master - Sales & Marketing management: University of Florida.</li>
+                    </ul>
+                  </div><!-- el__item__content -->
+                </div>
+              </div><!-- el__item -->
+              <div class="el__item">
+                <div class="el__item__wrap d-xl-flex align-items-center">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/home-team-img-03.png" alt="">
+                    </div>
+                  </div><!-- el__item__thumb -->
+                  <div class="el__item__content wow fadeInUp">
+                    <div class="-title">Robert MacAskill</div>
+                    <div class="-info">CO-FOUNDER & CEO of DefiBox</div>
+                    <ul class="-list list-unstyled">
+                      <li>Marketing and Sales Manager: Leisure Equity Marketing.</li>
+                      <li>Sales& Customer Complaints Manager Q-PHOTO.</li>
+                      <li>Insurance Broker: FIRST STEP FINANCIAL SERVICES.</li>
+                      <li>Sales Representative: PRE-EMPT SECURITY.</li>
+                      <li>Logistics Manager: Mobax Telecommunications.</li>
+                      <li>Master - Sales & Marketing management: University of Florida.</li>
+                    </ul>
+                  </div><!-- el__item__content -->
+                </div>
+              </div><!-- el__item -->
+              <div class="el__item">
+                <div class="el__item__wrap d-xl-flex align-items-center">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/home-team-img-02.png" alt="">
+                    </div>
+                  </div><!-- el__item__thumb -->
+                  <div class="el__item__content wow fadeInUp">
+                    <div class="-title">Robert MacAskill</div>
+                    <div class="-info">CO-FOUNDER & CEO of DefiBox</div>
+                    <ul class="-list list-unstyled">
+                      <li>Marketing and Sales Manager: Leisure Equity Marketing.</li>
+                      <li>Sales& Customer Complaints Manager Q-PHOTO.</li>
+                      <li>Insurance Broker: FIRST STEP FINANCIAL SERVICES.</li>
+                      <li>Sales Representative: PRE-EMPT SECURITY.</li>
+                      <li>Logistics Manager: Mobax Telecommunications.</li>
+                      <li>Master - Sales & Marketing management: University of Florida.</li>
+                    </ul>
+                  </div><!-- el__item__content -->
+                </div>
+              </div><!-- el__item -->
+              <div class="el__item">
+                <div class="el__item__wrap d-xl-flex align-items-center">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb">
+                      <img src="images/home-team-img-03.png" alt="">
+                    </div>
+                  </div><!-- el__item__thumb -->
+                  <div class="el__item__content wow fadeInUp">
+                    <div class="-title">Robert MacAskill</div>
+                    <div class="-info">CO-FOUNDER & CEO of DefiBox</div>
+                    <ul class="-list list-unstyled">
+                      <li>Marketing and Sales Manager: Leisure Equity Marketing.</li>
+                      <li>Sales& Customer Complaints Manager Q-PHOTO.</li>
+                      <li>Insurance Broker: FIRST STEP FINANCIAL SERVICES.</li>
+                      <li>Sales Representative: PRE-EMPT SECURITY.</li>
+                      <li>Logistics Manager: Mobax Telecommunications.</li>
+                      <li>Master - Sales & Marketing management: University of Florida.</li>
+                    </ul>
+                  </div><!-- el__item__content -->
+                </div>
+              </div><!-- el__item -->
+            </div>
+  
+          </div> <!-- .home-team__slider -->
+        </div>
+      </section>
+
+      <section class="home-advisors">
+        <div class="container container-950">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title wow fadeInLeft">Advisors</h2>
+          </header>
+          <div class="row">
+            <div class="col-6">
+              <div class="el__item wow fadeInUp">
+                <a href="https://avacapital.finance/" target="_blank">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-advisors-ava.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="el__item wow fadeInDown">
+                <a href="https://megasouls.com/" target="_blank">
+                  <div class="el__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-advisors-mega.png" alt="">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-fund">
+        <div class="container">
+          <div class="home-fund__wrap d-lg-flex align-items-center">
+            <h2 class="home-fund__title d-flex wow fadeInLeft">Fund</h2>
+            <div class="home-fund__info d-flex flex-wrap align-items-center justify-content-between">
+              <div class="el__item wow fadeInDown">
+                <a href="https://askventure.asia/" target="_blank">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-fund-01.png" alt="">
+                  </div>
+                </a>
+              </div><!-- el__item -->
+              <div class="el__item wow fadeInUp">
+                <a href="https://jventure.fund/" target="_blank">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-fund-02.png" alt="">
+                  </div>
+                </a>
+              </div><!-- el__item -->
+              <div class="el__item wow fadeInDown">
+                <a href="https://victorventure.com/" target="_blank">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-fund-03.png" alt="">
+                  </div>
+                </a>
+              </div><!-- el__item -->
+              <div class="el__item wow fadeInUp">
+                <a href="https://metavictorvc.com/" target="_blank">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-fund-04.png" alt="">
+                  </div>
+                </a>
+              </div><!-- el__item -->
+              <div class="el__item wow fadeInDown">
+                <a href="https://coin94.net/" target="_blank">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-fund-05.png" alt="">
+                  </div>
+                </a>
+              </div><!-- el__item -->
+              <div class="el__item wow fadeInUp">
+                <a href="https://wogocapital.com/" target="_blank">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-fund-06.png" alt="">
+                  </div>
+                </a>
+              </div><!-- el__item -->
+            </div><!-- el__item__wrap -->
+          </div>
+        </div>
+      </section>
+
+      <!-- modal connect wallet -->
+      <div class="modal fade wl__modal -connect" id="connectWallet" tabindex="-1" aria-labelledby="connectWalletTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header -border -border__bottom">
+              <h3 class="modal-title" id="connectWalletTitle">Connect wallet</h3>
+              <button type="button" class="-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="post" class="wl__form js-attr-disable">
+                <div class="form-group scroll__wrap">
+                  <ul class="wallet-list scroll__wrap__content d-flex flex-wrap justify-content-between">
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__metamask" class="-check js-attr-checkbox">
+                      <label for="wl__metamask" class="-name order-last order-md-first"><span>Metamask</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-metamask.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__bnb" class="-check js-attr-checkbox">
+                      <label for="wl__bnb" class="-name order-last order-md-first"><span>Binance Smart Chain</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-bnb-light.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__eth" class="-check js-attr-checkbox">
+                      <label for="wl__eth" class="-name order-last order-md-first"><span>Ethereum</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-eth.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__usdt" class="-check js-attr-checkbox">
+                      <label for="wl__usdt" class="-name order-last order-md-first"><span>Deff</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-deffzone.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                  </ul>
+                </div><!-- end form-group -->
+                <button class="btn -wallet -submit -disabled js-attr-button" disabled type="submit"><span>Connect wallet</span></button>
+                <div class="-note text-center">No wallet found. Make sure extension is installed.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal connect wallet -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-info">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="footer__item footer-info__txt">
+                  Create sustainable values for partners to ensure fair revenue sharing through a diverse ecosystem. Not only meeting the trend of the times but also satisfying the needs of users.
+                </div>
+              </div>
+              <div class="col-8 col-lg-3 offset-lg-1">
+                <div class="footer__item">
+                  <div class="footer__title">CONTACT US</div>
+                  <div><a href="mailto:support@deffZone.com">Support@defibox.com.</a></div>
+                  <div><a href="tel:+447458149855">+447458149855</a></div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-3">
+                <div class="footer__item">
+                  <div class="footer__title">ABOUT US</div>
+                  <a href="https://docs.defibox.com/" target="_blank">Document</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- footer-info -->
+          <div class="footer-bottom d-lg-flex align-items-center justify-content-between">
+            <div class="footer__logo">
+              <a href="index.html">
+                <img src="images/footer-logo.png" alt="Logo">
+              </a>
+            </div><!-- footer__logo -->
+            <div class="footer__social">
+              <ul class="-list">
+                <li><a href="#" target="_blank"><img src="assets/img/telegram.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/youtube.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/medium.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/twitter.svg" width="24" height="24" alt=""></a></li>
+              </ul>
+            </div><!-- footer__socical -->
+            <div class="copyright">
+              <p>Copyright © 2021 deffZone, All Rights Reserved</p>
+            </div><!-- copyright -->
+          </div><!-- footer-bottom -->
+        </div>
+      </footer>
+
+      <nav id="menu__mobile" class="nav__mobile">
+          <div class="nav__mobile__content">
+            <ul class="nav__mobile--ul">
+              <li class="menu-item active"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="voting.html">Voting</a></li>
+              <li class="menu-item"><a href="staking.html">Staking</a></li>
+              <li class="menu-item"><a href="farming.html">Farming</a></li>
+              <li class="menu-item js-toggle">
+                <a href="javascript: void(0);" class="js-toggle-btn">Swap</a>
+                <ul class="sub-menu js-toggle-show">
+                  <li><a href="swap.html">Exchange</a></li>
+                  <li><a href="liquidity.html">Liquidity</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
+            </ul>
+            <div class="languages">
+              <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""></div>
+              <div class="languages__content">
+                <p class="languages__text">Select language</p>
+                <ul class="">
+                  <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
+                  <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
+                </ul>
+              </div>
+            </div> <!-- .languages -->
+
+            <a href="#" class="btn -wallet w-100" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
+          </div>
+      </nav>
+    </div> <!-- .wrapper -->
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

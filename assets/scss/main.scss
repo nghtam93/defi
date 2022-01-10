@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+@import "../fonts/icomoon/style.css";
+
+@import "../libs/bootstrap/css/bootstrap.css";
+@import "_components/base";
+
+// Component
+@import "_components/animate";
+@import "_components/header";
+@import "_components/footer";
+@import "_components/menu";
+@import "_components/general";
+@import "_components/pagination";
+// Page
+
+@import "_pages/home";
+@import "_pages/wallet";
+@import "_pages/detail";
+@import "_pages/launchpad";
+@import "_pages/landing";
