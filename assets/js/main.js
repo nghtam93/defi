@@ -45,6 +45,7 @@ $(document).ready(function(){
           vertical: true,
           asNavFor: '.slider-for',
           focusOnSelect: true,
+          infinite: false,
           responsive: [
             {
               breakpoint: 768,

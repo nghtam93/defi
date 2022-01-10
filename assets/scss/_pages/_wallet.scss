@@ -2162,9 +2162,10 @@
     }
   }
 }
-
+.modal-backdrop.show{
+  opacity: 0.9;
+}
 .wl__modal{
-  background-color: rgba(#021966, 0.8);
   .-close{
     background: none;
     border: none;
