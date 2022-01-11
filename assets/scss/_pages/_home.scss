@@ -320,20 +320,12 @@
 				text-align: center;
 			}
 		}
-		.slick-slider{
-			@media (max-width: 1500px) and (min-width: 1200px) {
-				--arrow: -12px;
-			}
-			@media (max-width: 767px){
-				--arrow: -10px;
-			}
-		}
 		.el{
 			&__slider{
 				.slick-list{
 					padding-top: 45px !important;
 					padding-left: 0 !important;
-					margin: 0 0 0 calc(var(--space) * -1) !important;
+					// padding-right: 20%;
 					.slick-track{
 						display: flex;
 					}
@@ -358,6 +350,12 @@
 							}
 						}
 					}
+				}
+				.slick-next{
+					right: calc(var(--arrow) * 1.5);
+				}
+				.slick-prev{
+					left: calc(var(--arrow) * 1.5);
 				}
 			}
 			&__item{

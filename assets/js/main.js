@@ -10,33 +10,32 @@ $(document).ready(function(){
 
         setTimeout(function(){ new WOW().init(); }, 400);
 
-
         $('.home-work .el__slider').slick({
-          slidesToShow: 2,
-          slidesToScroll: 1,
           arrows: true,
           dots: false,
-          centerMode: true,
-          centerPadding: '20%',
+          infinite: false,
+          // initialSlide: 0,
+          slidesToScroll: 1,
+          slidesToShow: 2.5,
           responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                arrows: false,
+                autoplay: true,
+              }
+            },
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 1,
-                centerPadding: '30%',
+                slidesToShow: 1.5,
                 arrows: false,
-              }
-            },
-            {
-              breakpoint: 576,
-              settings: {
-                slidesToShow: 1,
-                centerPadding: '20%',
-                arrows: false,
+                autoplay: true,
               }
             },
           ]
-        });
+        })
+
         $('.slider-nav').slick({
           slidesToShow: 3,
           slidesToScroll: 1,

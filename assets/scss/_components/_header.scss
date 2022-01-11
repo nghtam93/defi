@@ -1,3 +1,12 @@
+body{
+	&:not(.home){
+		.header{
+			&:not(.is-active){
+				background: #FCF4F4;
+			}
+		}
+	}
+}
 .header{
 	position: fixed;
 	top: 0;
@@ -85,6 +94,9 @@
 		}
 	}
 	.btn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		@media (max-width: 1500px) and ( min-width: 1200px ){
 			font-size: 16px;
 			padding: 13px 16px;
@@ -100,6 +112,7 @@
 			padding: 8px 7.5px;
 			line-height: 1.5;
 			margin-left: 8px;
+			height: 34px;
 			&.-wallet {
 				span{
 					&:before{
@@ -111,6 +124,7 @@
 			}
 		}
 		@media (max-width: 420px){
+			height: 32px;
 			&.-wallet {
 				span{
 					&:before{
