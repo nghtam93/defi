@@ -23,7 +23,7 @@
       color: #868A96;
     }
     &:not(.-arrow){
-      background: #FFFFFF;
+      background: #FCF4F4;
     }
     i{
       vertical-align: middle;
@@ -41,7 +41,7 @@
       width: 0;
       height: 100%;
       border-radius: inherit;
-      background: linear-gradient(90deg, #ED8409 0%, #ff2e00 100%);
+      background: linear-gradient(90deg, #ED8409 0%, #EA3D3D 100%);
       opacity: 0;
       transition: all .5s;
       z-index: -1;

@@ -2119,14 +2119,14 @@
   font-size: 16px;
   line-height: (20/16);
   transition: 0.3s;
-  padding: calc(90px + var(--header-height)) 0 90px;
+  padding: 200px 0 90px;
   @media (max-width: 991px) and (min-width: 576px) {
-    padding-top: calc(70px + var(--header-height));
+    padding-top: 150px;
   }
   @media (max-width: 575px){
     // background-image: url('../img/pages/subpage-bg-sp.png'),
     //                 linear-gradient(180deg, #090E44 0%, #010530 100%);
-    padding: calc(50px + var(--header-height)) 0 50px;
+    padding: 110px 0 50px;
   }
   .wl{
     &__wrap{
@@ -2137,6 +2137,7 @@
       border-radius: 12px;
       padding: 25px 32px 40px;
       @media (max-width: 575px){
+        box-shadow: 0px 0px 8px rgba(#0B5CFF, 0.2);
         padding: 20px 16px 32px;
       }
     }
@@ -2665,7 +2666,7 @@
         &__wrap{
           display: inline-flex;
           align-items: center;
-          border: 2px solid #FFFFFF;
+          border: 2px solid #5D5E67;
           border-radius: 16px;
           padding: 1px 8px 0px;
           font-size: 15px;
@@ -2862,9 +2863,9 @@
               }
             }
             &__status{
-              background: rgba(#BF99FF, 0.1);
+              background: rgba(#5f00ff, 0.1);
               border-radius: 100px;
-              color: #BF99FF;
+              color: #5f00ff;
               font-size: 14px;
               font-weight: 500;
               min-width: 80px;
@@ -2932,9 +2933,9 @@
 
 .hs{
   &__title{
-    color: #F8F8F8;
+    color: #111111;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 24px;
   }
@@ -2961,17 +2962,18 @@
       color: #EA3D3D !important;
     }
     .-title{
-      color: #7B87A3;
+      color: #5f7097;
+      font-weight: 500;
       font-size: 16px;
       line-height: (20/16);
       margin-bottom: 8px;
     }
     .-info{
-      color: #F8F8F8;
+      color: #0B5CFF;
       font-weight: 700;
       line-height: (26/16);
       img{
-        width: 14px;
+        width: 16px;
         margin-right: 6px;
         transform: translateY(2px);
       }

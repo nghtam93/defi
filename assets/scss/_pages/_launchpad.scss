@@ -106,9 +106,7 @@
 
 .lp{
   &__item{
-    background: rgba(#FCF4F4, 0.6);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background: rgba(223,233,250,0.3);
     border-radius: 12px;
     line-height: 1.5;
     .-thumb{
@@ -123,6 +121,7 @@
       }
     }
     .-title{
+      color: #111111;
       font-size: 19px;
       font-weight: 700;
       @media (max-width: 767px) and (min-width: 576px){
@@ -133,7 +132,7 @@
       }
     }
     .-value{
-      color: #7B87A3;
+      color: #5f7097;
       font-size: 16px;
       @media (max-width: 767px) and (min-width: 576px){
         font-size: 15px;
@@ -142,7 +141,6 @@
     .-cap{
       margin: 12px 0;
       &__txt{
-        color: #CFD2DD;
         font-size: 14px;
       }
       &__value{
@@ -156,7 +154,6 @@
     .-progress{
       position: relative;
       &__title{
-        color: #CFD2DD;
         font-size: 16px;
         margin-bottom: 12px;
         @media (max-width: 767px) and (min-width: 576px){
@@ -166,22 +163,22 @@
       &__bar{
         position: relative;
         height: 6px;
-        background: #31415B;
+        background: rgba(#31415B, 0.4);
         border-radius: 5px;
         .-bar{
           position: absolute;
           height: 100%;
-          background: linear-gradient(90deg, #FB451D 0%, #ED8409 100%);
+          background: linear-gradient(90deg, #EA3D3D 0%, #0B5CFF 100%);
           border-radius: 5px;
         }
       }
       &__value{
-        color: #7B87A3;
+        color: #5f7097;
         font-size: 12px;
       }
     }
     .-info{
-      color: #CFD2DD;
+      color: #5f7097;
       font-size: 16px;
       @media (max-width: 767px) and (min-width: 576px){
         font-size: 15px;
@@ -191,11 +188,11 @@
           margin-bottom: 12px;
         }
         .-value{
-          color: #FFFFFF;
+          color: #111111;
           font-weight: 500;
           &.-status{
-            background: rgba(#BF99FF, 0.1);
-            color: #BF99FF;
+            background: rgba(#5f00ff, 0.1);
+            color: #5f00ff;
             border-radius: 6px;
             padding: 8px;
             line-height: (18/16);
@@ -226,12 +223,12 @@
     .-bottom{
       margin-top: 20px;
       padding-top: 20px;
-      border-top: 1px solid rgba(#52589A, 0.2);
+      border-top: 1px solid rgba(#0B5CFF, 0.2);
       &__time{
         color: #7B87A3;
         font-size: 14px;
         .-time{
-          color: #FFFFFF;
+          color: #111111;
           font-size: 16px;
           font-weight: 600;
         }
@@ -241,6 +238,7 @@
         font-weight: 600;
         width: 110px;
         padding: 7px 10px;
+        border-radius: 8px;
         box-shadow: none;
         @media (max-width: 767px) and (min-width: 576px){
           font-size: 14px;
@@ -249,20 +247,20 @@
       }
     }
     .-make{
-      border: 1px solid #FB741D;
-      border-radius: 2px;
+      border: 1px solid #EA3D3D;
+      border-radius: 3px;
       margin-bottom: 32px;
       line-height: 1;
       width: 100%;
       &__info{
-        background: rgba(251, 116, 29, 0.1);
+        background: #DFE9FA;
         border-radius: 2px;
-        color: #FFFFFF;
+        color: #111111;
         font-size: 14px;
         line-height: (21/14);
         padding: 10px 16px;
         a{
-          color: #FFFFFF;
+          color: #111111;
           &:hover{
             text-decoration: underline;
           }
@@ -283,18 +281,19 @@
         }
       }
       .btn{
+        border-radius: 12px;
         font-size: 16px;
         font-weight: 700;
-        padding: 12px 16px;
+        padding: 14px 16px;
         box-shadow: none;
         &.-disabled{
-          background: linear-gradient(90deg, #FB451D 0%, #ED8409 100%);
+          background: linear-gradient(90deg, #EA3D3D 0%, #0B5CFF 100%);
           opacity: 0.4;
         }
       }
     }
     .-pool{
-      color: #CFD2DD;
+      color: #5f7097;
       font-size: 16px;
       line-height: (24/16);
       &__title{
@@ -317,7 +316,6 @@
           }
         }
         .-txt{
-          font-weight: 300;
           margin-right: 24px;
           @media (max-width: 1199px) and (min-width: 992px){
             margin-right: 12px;
@@ -327,8 +325,7 @@
           }
         }
         .-value{
-          color: #CFD2DD;
-          font-weight: 400;
+          color: #111111;
           @media (max-width: 1199px) and (min-width: 992px){
             font-size: 12px;
           }
@@ -339,22 +336,23 @@
       }
       .btn{
         box-shadow: none;
-        padding: 12px 16px;
+        border-radius: 14px;
+        padding: 14px 16px;
         font-size: 16px;
         &:not(:last-child){
           margin-bottom: 12px;
         }
         &__status{
-          border: 1px solid #FB741D;
+          border: 1px solid #EA3D3D;
           background: none;
-          color: #FB741D;
+          color: #EA3D3D;
           &:hover{
             color: #FFFFFF;
           }
         }
       }
       &__txt{
-        color: #7B87A3;
+        color: #111111;
         font-size: 14px;
         font-weight: 300;
         margin-top: 8px;
@@ -370,14 +368,13 @@
   }
 
   &__list{
-    color: #CFD2DD;
+    color: #5f7097;
     font-size: 14px;
-    font-weight: 300;
     line-height: 1.5;
     &__item{
       padding: 12px 0;
       &:not(:last-child){
-        border-bottom: 1px solid #242A65;
+        border-bottom: 1px solid rgba(#0B5CFF, 0.2);
       }
       .-txt{
         margin-right: 24px;
@@ -388,8 +385,7 @@
         }
       }
       .-value{
-        color: #CFD2DD;
-        font-weight: 400;
+        color: #111111;
         word-break: break-all;
         @media (max-width: 767px){
           width: percentage(175/295);
@@ -412,22 +408,22 @@
       width: 26%;
     }
     thead{
-      border-bottom: 1px solid #242A65;
+      border-bottom: 1px solid rgba(#0B5CFF, 0.2);
     }
     tr{
       &:not(:last-child){
-        border-bottom: 1px solid #242A65;
+        border-bottom: 1px solid rgba(#0B5CFF, 0.2);
       }
     }
     th, td{
       padding: 12px 8px;
-      color: #CFD2DD;
+      color: #5f7097;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.5;
     }
-    th{
-      font-weight: 300;
+    td{
+      color: #111111;
     }
     tr{
       th, td{
@@ -455,7 +451,7 @@
     row-gap: var(--row-gap);
     .dt{
       &__title{
-        color: #FFFFFF;
+        color: #0B5CFF;
         font-size: 18px;
         font-weight: 600;
         line-height: 1.5;
@@ -463,9 +459,7 @@
       }
     }
     &__detail, &__token, &__metric{
-      background: rgba(255, 255, 255, 0.07);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
+      background: rgba(223,233,250,0.3);
       border-radius: 12px;
       padding: var(--item-padding);
       @media (min-width: 992px){
@@ -476,7 +470,6 @@
       }
     }
     &__detail{
-      color: #CFD2DD;
       font-size: 14px;
       line-height: (24/14);
       .dt{
@@ -523,9 +516,9 @@
                   margin-right: 0;
                 }
                 .-name{
-                  color: #FFFFFF;
+                  color: #111111;
                   font-size: 24px;
-                  font-weight: 700;
+                  font-weight: 600;
                 }
                 .-txt{
                   margin-top: 6px;
@@ -540,9 +533,9 @@
               }
             }
             &__status{
-              background: rgba(#BF99FF, 0.1);
+              background: rgba(#5f00ff, 0.1);
               border-radius: 100px;
-              color: #BF99FF;
+              color: #5f00ff;
               font-size: 14px;
               font-weight: 500;
               line-height: (20/14);
@@ -632,14 +625,14 @@
         }
         .-time{
           font-size: 18px;
-          color: #CFD2DD;
+          color: #5f7097;
           line-height: (20/18);
           margin-bottom: 24px;
           &__txt{
             margin-bottom: 8px;
           }
           &__info{
-            color: #FFFFFF;
+            color: #111111;
             font-size: 30px;
             font-weight: 600;
             line-height: 1.5;
@@ -686,7 +679,7 @@
       padding: var(--item-padding);
     }
     .-highlight{
-      color: #FB741D;
+      color: #EA3D3D;
     }
   }
 }
