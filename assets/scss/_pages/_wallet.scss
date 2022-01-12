@@ -28,7 +28,7 @@
     &.is-show{
       .form-control{
         &:focus{
-          border-color: #FB741D !important;
+          border-color: #EA3D3D !important;
         }
       }
     }
@@ -42,7 +42,7 @@
     display: block;
     padding: 0;
     border-radius: 12px;
-    background: #232863;
+    background: #0B5CFF;
     text-align: center;
     box-shadow: 0px 0px 5px rgba(255,255,255,0.1);
     text-align: left;
@@ -61,7 +61,7 @@
       height: 0;
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
-      border-bottom: 8px solid #232863;
+      border-bottom: 8px solid #0B5CFF;
     }
     li{
       padding: 0;
@@ -71,13 +71,13 @@
       overflow: hidden;
       a{
         display: block;
-        color: #7B87A3;
+        color: rgba(#FFFFFF, 0.7);
         transition: 0.3s;
         padding: 13px 15px;
         transition: 0.3s;
         &:hover{
           color: #FFFFFF;
-          background-color: #050A3B;
+          background-color: rgba(255,255,255,0.07);
         }
       }
       &:first-child{
@@ -292,13 +292,13 @@
       }
     }
     .-calculator{
-      background: #232863;
+      background: #DFE9FA;
       border-radius: 16px;
       text-align: right;
-      border: 1px solid transparent;
+      border: 1px solid #0B5CFF;
       padding: 20px 16px 10px;
       &:focus-within{
-        border-color: #FB741D;
+        border-color: #EA3D3D;
       }
       .cc{
         &__wrap{
@@ -306,7 +306,9 @@
         }
         &__input{
           font-size: 20px;
+          color: #111111;
           .form-control{
+            color: #111111;
             padding: 0;
             border-radius: 0;
             border: none;
@@ -319,7 +321,7 @@
               margin: 0;
             }
             &::placeholder{
-              color: #FFFFFF;
+              opacity: #111111;
             }
           }
           &__txt{
@@ -327,8 +329,9 @@
           }
         }
         &__txt{
+          font-weight: 500;
           font-size: 15px;
-          opacity: 0.7;
+          color: rgba(#111111, .8);
         }
         &__icon{
           font-size: 20px;
@@ -347,9 +350,9 @@
         border-radius: 16px;
         border: none;
         box-shadow: none;
-        background: rgba(#FFFFFF, 0.2);
+        background: rgba(#111111, 0.1);
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 0.05rem;
         padding: 3px 16px;
         outline: none;
@@ -360,13 +363,13 @@
           padding: 3px 10px;
         }
         &:not(.-disabled){
-          color: #FB741D;
+          color: #EA3D3D;
           &:hover{
             opacity: 0.8;
           }
         }
         &.-disabled{
-          color: rgba(#FFFFFF, 0.6);
+          color: rgba(#111111, .6);
         }
         &:before{
           display: none;
@@ -514,7 +517,7 @@
               a{
                 display: flex;
                 align-items: center;
-                color: #FB741D;
+                color: #EA3D3D;
                 line-height: 1;
                 span{
                   display: inline-block;
@@ -828,11 +831,12 @@
     }
     .-txt{
       font-size: 14px;
+      font-weight: 500;
     }
     .-info{
       color: #111111;
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 500;
       margin-top: 0 !important;
       @media (max-width: 575px){
         font-size: 14px;
@@ -896,13 +900,14 @@
 .sw{
   &__list{
     &__item{
+      color: #111111;
       font-weight: 700;
       &:not(:last-child){
         margin-bottom: 26px;
       }
       &.-arrow{
         font-size: 12px;
-        color: #FB741D;
+        color: #EA3D3D;
         margin-left: 8px;
         @media (max-width: 575px){
           margin-left: 6px;
@@ -1080,8 +1085,8 @@
   &__time{
     &__wrap{
       flex-grow: 1;
-      background: #232863;
-      border: 1px solid rgba(#FFFFFF, 0.5);
+      background: #DFE9FA;
+      border: 1px solid rgba(#0B5CFF, 0.2);
       border-radius: 16px;
       &:not(.-disabled){
         .cc__time__item{
@@ -1091,7 +1096,7 @@
           input{
             &:checked{
               +label{
-                background: #ff2e00;
+                background: #EA3D3D;
                 color: #FFFFFF;
               }
             }
@@ -1129,8 +1134,8 @@
       position: relative;
       line-height: 0;
       label{
-        background: #232863;
-        border: 1px solid rgba(#FFFFFF, 0.5);
+        background: #DFE9FA;
+        border: 1px solid #0B5CFF;
         border-radius: 10px;
         width: 28px;
         height: 28px;
@@ -1154,8 +1159,8 @@
         opacity: 0;
         &:checked{
           +label{
-            background: #ff2e00;
-            border-color: #ff2e00;
+            background: #0B5CFF;
+            border-color: #0B5CFF;
             i{
               opacity: 1;
             }
@@ -1168,22 +1173,24 @@
     font-size: 40px;
   }
   &__rate{
-    border: 1px solid #FB451D;
+    border: 1px solid #EA3D3D;
     border-radius: 16px;
     overflow: hidden;
     &__wrap{
-      background: rgba(255,255,255,0.2);
+      background: #FCF4F4;
       border-radius: 16px;
       padding: 24px;
       font-size: 20px;
       .form-label{
-        color: #FFFFFF;
+        color: #5D5E67;
       }
       .-txt{
         font-size: 14px;
+        font-weight: 500;
       }
     }
     &__input{
+      color: #111111;
       .-sym{
         left: 0;
         font-size: 24px;
@@ -1192,6 +1199,7 @@
         transform: translateY(-50%);
       }
       .form-control{
+        color: #111111;
         font-size: 24px;
         max-width: 75%;
         padding: 0 0 0 17px;
@@ -1227,7 +1235,7 @@
         z-index: -1;
         &:checked{
           ~.form-control{
-            background-color: #232863;
+            background-color: #DFE9FA;
             padding: 5px 16px 5px 32px;
             font-size: 18px;
             pointer-events: unset;
@@ -1252,7 +1260,7 @@
     &__btn{
       position: relative;
       font-size: 20px;
-      color: #FB741D;
+      color: #EA3D3D;
       font-weight: 600;
       letter-spacing: 0.05em;
       height: 48px;
@@ -1269,7 +1277,7 @@
         transition: 0.3s;
       }
       &:hover{
-        color: #FB741D;
+        color: #EA3D3D;
         @media (min-width: 1025px){
           opacity: 0.65;
         }
@@ -1320,7 +1328,7 @@
       font-size: 18px;
       margin-top: 24px;
       a{
-        color: #FB741D;
+        color: #EA3D3D;
         &:hover{
           text-decoration: underline;
         }
@@ -1660,7 +1668,7 @@
   }
   &__submit{
     &__thumb{
-      color: #FB741D;
+      color: #EA3D3D;
       font-size: 100px;
     }
     &__info{
@@ -1678,7 +1686,7 @@
           font-size: 20px;
         }
         a{
-          color: #FB741D;
+          color: #EA3D3D;
           &:hover{
             text-decoration: underline;
           }
@@ -1686,7 +1694,7 @@
       }
       .-add{
         background-color: #232863;
-        color: #FB741D;
+        color: #EA3D3D;
         font-size: 22px;
         font-weight: 700;
         padding: 12px 30px;
@@ -1725,8 +1733,8 @@
   }
   .sc{
     &__box{
-      background-color: #232863;
-      border: 1px solid rgba(255,255,255,0.07);
+      background-color: #DFE9FA;
+      border: 1px solid #0B5CFF;
       border-radius: 16px;
       padding: 16px;
     }
@@ -1755,7 +1763,7 @@
       right: 0;
       top: calc(100% + 10px);
       background-color: #0B5CFF;;
-      box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+      box-shadow: 0px 0px 5px rgba(#FCF4F4, 0.4);
       border-radius: 5px;
       padding: 0;
       transform-origin: top;
@@ -2031,13 +2039,13 @@
   }
 }
 .wallet-tabs{
-  background: #232961;
+  background: #0B5CFF;
   padding: 14px 20px;
   text-align: center;
   a{
     position: relative;
     display: inline-block;
-    color: #7B87A3;
+    color: rgba(#FFFFFF, 0.7);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
@@ -2091,11 +2099,11 @@
     border-radius: 3px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #0B5CFF; 
+    background: #0B5CFF;
     border-radius: 3px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #0B5CFF; 
+    background: #0B5CFF;
   }
   .scroll__wrap__content{
     overflow: hidden;
@@ -2554,16 +2562,17 @@
       column-gap: 12%;
     }
     .-title{
-      color: #7B87A3;
+      color: rgba(#4D4D4D, 0.8);
       font-size: 14px;
       font-weight: 500;
     }
     .-numb{
+      color: #111111;
       position: relative;
       font-weight: 400;
       &__txt{
         font-size: 14px;
-        color: #7B87A3;
+        color: rgba(#4D4D4D, 0.8);
       }
       button{
         line-height: 0;
@@ -2637,7 +2646,7 @@
         }
       }
       a{
-        color: #FB741D;
+        color: #EA3D3D;
         font-weight: 500;
         transition: 0.3s;
         i{
@@ -2669,8 +2678,8 @@
             border-color: rgb(237, 75, 158);
           }
           &.-auto{
-            color: #FB741D;
-            border-color: #FB741D;;
+            color: #EA3D3D;
+            border-color: #EA3D3D;;
           }
           i{
             margin-right: 0.5em;
@@ -2700,7 +2709,7 @@
       .ac{
         &__item{
           width: calc((100% - 24px) / 2);
-          border: 2px solid rgba(#FFFFFF, 0.5);
+          border: 2px solid rgba(#0B5CFF, 1);
           border-radius: 16px;
           padding: 16px;
           @media (max-width: 575px){
@@ -2711,6 +2720,7 @@
           }
           &__txt{
             font-size: 16px;
+            font-weight: 600;
             width: 100%;
             margin-bottom: 16px;
           }
@@ -2725,10 +2735,10 @@
               box-shadow: none;
               outline: none;
               border: none;
-              color: #FFFFFF;
+              color: #0B5CFF;
               font-size: 24px;
               &::placeholder{
-                color: #FFFFFF;
+                color: #0B5CFF;
               }
             }
             .btn{
@@ -2759,9 +2769,9 @@
           }
         }
         &__box{
-          background: #232863;
+          background: #FCF4F4;
           border-radius: 12px;
-          box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+          box-shadow: 0px 0px 10px rgba(#0B5CFF, 0.4);
           line-height: 1.5;
           padding: 16px 0;
           position: absolute;
@@ -2776,7 +2786,7 @@
           overflow-y: auto;
           overflow-x: hidden;
           scrollbar-width: thin;
-          scrollbar-color: #010530 #2B3384;
+          scrollbar-color: rgba(#010530, 0.5) rgba(#2B3384, 0.5);
           z-index: 9;
           @media (max-width: 575px){
             padding: 12px 0;
@@ -2785,15 +2795,15 @@
             width: 8px;
           }
           &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 8px #2B3384;
+            box-shadow: inset 0 0 8px rgba(#2B3384, 0.5);
             border-radius: 8px;
           }
           &::-webkit-scrollbar-thumb {
-            background: #010530; 
+            background: rgba(#010530, 0.5); 
             border-radius: 3px;
           }
           &::-webkit-scrollbar-thumb:hover {
-            background: #010530; 
+            background: rgba(#010530, 0.5); 
           }
           .scroll__wrap__content{
             overflow: hidden;
@@ -2813,7 +2823,7 @@
                 width: calc(100% - 40px);
                 left: 20px;
                 bottom: 0;
-                border-bottom: 1px solid #3C438A;
+                border-bottom: 1px solid rgba(#0B5CFF, 0.1);
                 @media (max-width: 575px){
                   width: calc(100% - 24px);
                   left: 12px;
@@ -2821,7 +2831,7 @@
               }
             }
             &:hover{
-              background: rgba(#050A3B, 0.2);
+              background: rgba(#DFE9FA, 0.4);
             }
             &__info{
               max-width: calc(100% - 100px - 1.5rem);
@@ -2870,12 +2880,12 @@
                 background-color: rgba(#F14A16, 0.1);
               }
               &.-upcoming{
-                color: #06FF00;
-                background-color: rgba(#06FF00, 0.1);
+                color: #069403;
+                background-color: rgba(#069403, 0.1);
               }
               &.-end{
-                color: #FFFFFF;
-                background-color: rgba(#FFFFFF, 0.1);
+                color: #0B5CFF;
+                background-color: rgba(#0B5CFF, 0.1);
               }
               &.-kyc{
                 background: rgba(#955bfa, 0.1);
@@ -2887,9 +2897,7 @@
       }
     }
     .form-label{
-      color: #CFD2DD;
       font-size: 16px;
-      font-weight: 700;
     }
     .form-control{
       font-size: 16px;
@@ -2950,7 +2958,7 @@
       }
     }
     .-highlight{
-      color: #FB741D !important;
+      color: #EA3D3D !important;
     }
     .-title{
       color: #7B87A3;
