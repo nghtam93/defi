@@ -1105,6 +1105,9 @@
 	}
 	@media (max-width: 767px){
 		&-banner{
+			&__wrap {
+				padding-top: 120px;
+			}
 			.btn {
 				display: inline-flex;
 				align-items: center;

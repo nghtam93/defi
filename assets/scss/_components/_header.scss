@@ -74,6 +74,10 @@ body{
 				width: 24px;
 				height: 26px;
 			}
+			@media (max-width: 767px) and (min-width: 575px){
+				width: 24px;
+				height: 26px;
+			}
 			@media (max-width: 575px){
 				width: 14px;
 				height: 16px;
@@ -81,6 +85,11 @@ body{
 			@media (max-width: 420px){
 				margin-right: 4px;
 			}
+		}
+	}
+	@media (max-width: 767px) and (min-width: 576px){
+		.logo{
+			max-width: 150px;
 		}
 	}
 	@media (max-width: 575px){
@@ -102,6 +111,16 @@ body{
 			padding: 13px 16px;
 			span{
 				&:before{
+					margin-right: 8px;
+				}
+			}
+		}
+		@media (max-width: 767px) and (min-width: 575px){
+			font-size: 14px;
+			padding: 13px 15px;
+			span{
+				&:before{
+					font-size: 18px;
 					margin-right: 8px;
 				}
 			}

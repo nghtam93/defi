@@ -1,18 +1,32 @@
 .launchpad{
   &-detail{
-    padding: 112px 0;
+    position: relative;
+    padding: 112px 0 80px;
     @media (max-width: 575px){
       padding-top: 70px;
-      padding-bottom: 90px;
+      padding-bottom: 70px;
     }
     &.-single{
       @media (min-width: 992px){
-        padding-bottom: 55px;
+        padding-bottom: 45px;
+      }
+    }
+    &:before{
+      content: '';
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: url('../img/pages/subpage-bg.png') no-repeat top center, #EAEDF4;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      @media (max-width: 575px){
+        background-image: url('../img/pages/subpage-bg-sp.png');
+        background-position: right top;
       }
     }
   }
   &-content{
-    // background: url('../img/pages/launchpad-bg.png') no-repeat top center / 100%;
     padding-top: 90px;
     @media (max-width: 767px){
       padding-top: 32px;
@@ -106,7 +120,8 @@
 
 .lp{
   &__item{
-    background: rgba(223,233,250,0.3);
+    background: #FBFBFB;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     line-height: 1.5;
     .-thumb{
@@ -459,7 +474,8 @@
       }
     }
     &__detail, &__token, &__metric{
-      background: rgba(223,233,250,0.3);
+      background: #FBFBFB;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
       border-radius: 12px;
       padding: var(--item-padding);
       @media (min-width: 992px){

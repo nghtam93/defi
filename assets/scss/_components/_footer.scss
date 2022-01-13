@@ -1,8 +1,10 @@
 .footer{
+	position: relative;
 	background: url('../img/footer-bg2.png') no-repeat center center / cover;
 	position: relative;
 	padding: 72px 0 56px;
 	color: #111111;
+	z-index: 9;
 	@media (max-width: 767px){
 		padding: 68px 0 37px;
 		background-image: url('../img/footer-bg-sp.png');
