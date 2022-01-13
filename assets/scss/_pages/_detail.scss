@@ -2,7 +2,10 @@
   &-detail{
     position: relative;
     z-index: 1;
-    padding: 220px 0 80px;
+    padding: 190px 0 70px;
+    @media (max-width: 1199px) and (min-width: 768px) {
+      padding: 150px 0 50px;
+    }
     @media (max-width: 991px) and (min-width: 576px) {
       padding: 160px 0 50px;
     }
@@ -28,6 +31,7 @@
       width: 100%;
       height: 100vh;
       background: url('../img/pages/subpage-bg.png') no-repeat top center, #EAEDF4;
+      background-size: cover;
       left: 0;
       top: 0;
       z-index: -1;
@@ -36,49 +40,80 @@
         background-position: right top;
       }
     }
-  }
-  &__title{
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 74px;
-  }
-  &__error{
-    margin-bottom: 32px;
-    &--img{
-      &-1{
-        max-width: 133px;
-        @media (max-width: 575px){
-          width: percentage(95.8/333.5);
-          max-width: 96px;
+    .container{
+      @media (min-width: 1200px){
+        max-width: calc(1042px + calc(var(--bs-gutter-x, 0.75rem) * 2));
+      }
+    }
+    @media (min-width: 992px){
+      .col-lg{
+        &-53{
+          width: 53%;
+        }
+        &-37{
+          width: 37%;
         }
       }
-      &-2{
-        max-width: 185px;
-        margin: 0 5px;
-        animation: spinner-rotate 20s linear infinite;
-        @media (max-width: 575px){
-          width: percentage(133.21/333.5);
-          max-width: 133px;
-        }
+    }
+  }
+  &__title{
+    color: #0B5CFF;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    @media (max-width: 991px) and (min-width: 768px){
+      font-size: 52px;
+    }
+    @media (max-width: 575px){
+      font-size: 52px;
+    }
+  }
+  &__error{
+    @media (max-width: 767px){
+      margin-bottom: 32px;
+      img{
+        width: 90%;
+        max-width: 450px;
       }
     }
   }
   &__info{
-    font-size: 14px;
-    line-height: (17/14);
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+    @media (max-width: 991px) and (min-width: 768px){
+      font-size: 14px;
+    }
     .-title{
-      font-size: 28px;
+      color: #111111;
+      font-size: 32px;
       font-weight: 700;
       line-height: (38/28);
-      margin-bottom: 16px;
+      margin-bottom: 32px;
+      @media (max-width: 991px) and (min-width: 768px){
+        font-size: 28px;
+      }
+      @media (max-width: 575px){
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
     }
     .-action{
-      margin-top: 32px;
+      margin-top: 48px;
+      @media (max-width: 575px){
+        margin-top: 32px;
+      }
       .btn{
-        font-size: 14px;
-        line-height: (24/14);
-        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 20px 48px;
+        @media (max-width: 991px) and (min-width: 768px){
+          padding: 16px 40px;
+        }
+        @media (max-width: 575px){
+          padding: 16px 40px;
+        }
       }
     }
   }
