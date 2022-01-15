@@ -2256,10 +2256,10 @@
   }
 }
 .modal-backdrop.show{
-  opacity: 1;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  opacity: 0;
 }
 .wl__modal{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   .-close{
     background: rgba(#5D5E67, 0.2);
     border: none;
