@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>DefiBox</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="icon" href="images/favicon.png" />
     <meta property="og:image" content="images/image-featured.jpg">
 
@@ -121,10 +121,10 @@
             </div>
           </div>
         </div>
-        <div class="-arrow d-none d-lg-block"><img src="./assets/img/arrow.svg" alt=""></div>
+        <a href="#home-voting" class="-arrow d-none d-lg-block"><img src="./assets/img/arrow.svg" alt=""></a>
       </section>
 
-      <section class="home-voting next">
+      <section class="home-voting next" id="home-voting">
         <div class="container">
           <div class="home-voting__wrap d-lg-flex align-items-start align-items-sm-center">
             <div class="-icon d-flex align-items-center justify-content-center wow fadeInLeft"><img src="./images/home-voting-img-01.png" alt=""></div>
@@ -615,34 +615,40 @@
       </footer>
 
       <nav id="menu__mobile" class="nav__mobile">
-          <div class="nav__mobile__content">
-            <ul class="nav__mobile--ul">
-              <li class="menu-item active"><a href="index.html">Home</a></li>
-              <li class="menu-item"><a href="voting.html">Voting</a></li>
-              <li class="menu-item"><a href="staking.html">Staking</a></li>
-              <li class="menu-item"><a href="farming.html">Farming</a></li>
-              <li class="menu-item js-toggle">
-                <a href="javascript: void(0);" class="js-toggle-btn">Swap</a>
-                <ul class="sub-menu js-toggle-show">
-                  <li><a href="swap.html">Exchange</a></li>
-                  <li><a href="liquidity.html">Liquidity</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
-            </ul>
-            <div class="languages">
-              <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""></div>
-              <div class="languages__content">
-                <p class="languages__text">Select language</p>
-                <ul class="">
-                  <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
-                  <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
-                </ul>
-              </div>
-            </div> <!-- .languages -->
-
-            <a href="#" class="btn -wallet w-100" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
+        <div class="nav__mobile__content">
+          <div class="menu-mb__btn">
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
           </div>
+          <div class="nav__mobile--logo text-center">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+          </div>
+          <ul class="nav__mobile--ul">
+            <li class="menu-item active"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="voting.html">Voting</a></li>
+            <li class="menu-item"><a href="staking.html">Staking</a></li>
+            <li class="menu-item"><a href="farming.html">Farming</a></li>
+            <li class="menu-item js-toggle">
+              <a href="javascript: void(0);" class="js-toggle-btn">Swap</a>
+              <ul class="sub-menu js-toggle-show">
+                <li><a href="swap.html">Exchange</a></li>
+                <li><a href="liquidity.html">Liquidity</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
+          </ul>
+          <div class="languages">
+            <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
+                <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
+              </ul>
+            </div>
+          </div> <!-- .languages -->
+        </div>
       </nav>
     </div> <!-- .wrapper -->
 

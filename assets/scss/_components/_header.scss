@@ -180,6 +180,14 @@ body{
 			.-list{
 				@media (max-width: 575px){
 					font-size: 12px;
+					li{
+						a{
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							height: 38px;
+						}
+					}
 				}
 			}
 		}

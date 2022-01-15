@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DefiBox | Voting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/image-featured.jpg">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
+  <body class="voting-page">
+    <div class="wrapper">
+
+      <div class="loading-page">
+        <div class="loading-page__logo">
+          <img src="images/logo.png" alt="Logo">
+          <div class="text-center mt-3">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <header class="header -fix">
+        <div class="container d-flex align-items-center">
+          <div class="d-xl-none">
+            <div class="menu-mb__btn">
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+            </div>
+          </div>
+
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Logo">
+            </a>
+          </h1> <!-- .logo -->
+
+          <nav class="main__nav d-none d-xl-block">
+            <ul class="el__menu">
+              <li class="menu-item"><a href="index.html">Home</a></li>
+              <li class="menu-item active"><a href="voting.html">Voting</a></li>
+              <li class="menu-item"><a href="staking.html">Staking</a></li>
+              <li class="menu-item"><a href="farming.html">Farming</a></li>
+              <li class="menu-item has-sub">
+                <a href="javascript: void(0);">Swap</a>
+                <ul class="sub-menu">
+                  <li><a href="swap.html">Exchange</a></li>
+                  <li><a href="liquidity.html">Liquidity</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__price ms-auto">
+            <img src="assets/img/header-price-img.png" width="29" height="32" alt="">
+            <span class="">$0.01951</span>
+          </div>
+
+          <a href="#" class="btn -wallet" type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#connectWallet"><span>Connect wallet</span></a>
+          <!-- <div class="-connected js-dropdown">
+            <div class="btn js-dropdown-selected -wallet d-flex align-items-center">
+              <span class="-txt me-2">0x...a78E</span>
+              <i class="icon-arrow-down"></i>
+            </div>
+            <div class="-wallet__more js-dropdown-list">
+              <ul class="-list list-unstyled">
+                <li><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#mangeWallet">Wallet</a></li>
+                <li><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#mangeWallet">Transactions</a></li>
+                <li><a href="#">Your NTFs</a></li>
+                <li><a href="#" class="d-flex justify-content-between align-items-center">Make a Profile <span class="-required"></span></a></li>
+                <li><a href="#" class="d-flex justify-content-between align-items-center">Disconnect <i class="icon-logout"></i></a></li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="languages ms-lg-4 d-none d-lg-inline-block">
+            <div class="languages__label"><img src="./assets/flag/en.png" width="32" height="32" alt=""></div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="active"><a href=""><img src="./assets/flag/en.png" width="32" height="32" alt=""><span>English</span></a></li>
+                <li><a href=""><img src="./assets/flag/vi.png" width="32" height="32" alt=""><span>Vietnamese</span></a></li>
+              </ul>
+            </div>
+          </div> <!-- .languages -->
+
+        </div>
+      </header>
+
+      <section class="voting-detail">
+        <div class="container">
+          <div class="voting-detail__header">
+            <h2 class="hd__title text-center wow fadeInDown">Coin Voting - Defi 2.0</h2>
+            <div class="hd__time text-center wow fadeInLeft">09.02.2021</div>
+            <ul class="hd__info list-unstyled wow fadeInRight">
+              <li class="d-flex justify-content-between">
+                <span class="-txt me-2">Your Name</span>
+                <span class="-info">Your Name</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span class="-txt me-2">Your Company</span>
+                <span class="-info">Your Company</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span class="-txt me-2">123 Your Street</span>
+                <span class="-info">123 Your Street</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span class="-txt me-2">Your City, ST 12345</span>
+                <span class="-info">Your City, ST 12345</span>
+              </li>
+            </ul><!-- hd__info -->
+          </div><!-- voting-detail__header -->
+
+          <div class="voting-detail__content">
+            <div class="row vt__row flex-lg-row-reverse align-items-center">
+              <div class="col-lg-6 wow fadeInRight">
+                <div class="vt__thumb -contain">
+                  <img src="./assets/img/pages/voting-img-01.png" alt="" class="vt__thumb-01 -light">
+                  <img src="./assets/img/pages/voting-img-02.png" alt="" class="vt__thumb-02 -mousex">
+                </div><!-- vt__thumb -->
+              </div><!-- col-lg-6 -->
+              <div class="col-lg-6">
+                <div class="vt__info">
+                  <div class="vt__title wow fadeInLeft">Problems</div>
+                  <ul class="vt__list -list__numb list-unstyled">
+                    <li class="vt__list__item wow fadeInUp">Bitcoin tăng giá cùng với sự phát triển của Blockchain dẫn đến ngày càng nhiều token ra đời. Nhà đầu tư bị loạn trong thông tin và rất cần nơi để tham khảo thông tin về token được đánh giá ra sao, lẫn lượng ủng hộ từ cộng đồng đối với các token này.</li>
+                    <li class="vt__list__item wow fadeInUp">Các hệ thống coin tracker như Coinmarketcap, Coingecko hiện tại chỉ dừng ở mức cung cấp giá token và  thông tin tổng quan về từng token do chính nhà phát hành token cung cấp.</li>
+                    <li class="vt__list__item wow fadeInUp">Các cộng đồng hay user ủng hộ token nào và lượng cộng đồng ủng hộ ra sao không có nơi để track. Đây là 1 điều quan trọng với bất kỳ token nào.</li>
+                    <li class="vt__list__item wow fadeInUp">Việc voting cho token hiện tại không đáng tin cậy. User không serious voting vì không ảnh hưởng hay có lợi ích trực tiếp từ quá trình vote.</li>
+                    <li class="vt__list__item wow fadeInUp">Các Coin Analyser (KOL) không có nơi để record những thành quả của mình và nhận được reward tương ứng cho việc tìm “Gem” cho cộng đồng. Những action này được nhà đầu tư rất quan tâm nhưng lại đang diễn ra lẻ tẻ, không có nơi tập trung, khó cho nhà đầu tư biết đến lẫn khó cho Coin Analyser phát triển được cộng đồng hay followers của mình.</li>
+                    <li class="vt__list__item wow fadeInUp">Nhà phát hành token nào cũng đều muốn tăng số lượng người giữ token của mình. Nhưng những cách chạy mkt campaign cũ như Airdrop không thật sự hiệu quả, vì User chỉ KYC để nhận token free chứ không thật sự nghiêm túc tìm hiểu và ủng hộ token ấy. Ngoài ra còn các vấn đề khác như fake KYC hay user nào cũng sẵn sàng nhận tất cả token v.v..</li>
+                    <li class="vt__list__item wow fadeInUp">Không có 1 nơi để ghi nhận/track những action đóng góp của user như like, share, comment v.v.. với 1 token nhất định. </li>
+                  </ul><!-- vt__list -->
+                </div><!-- vt__info -->
+              </div><!-- col-lg-6 -->
+            </div><!-- vt__row -->
+
+            <div class="row vt__row align-items-center">
+              <div class="col-lg-6 wow fadeInLeft">
+                <div class="vt__thumb -contain">
+                  <img src="./assets/img/pages/voting-img-03.png" alt="" class="vt__thumb-01 -light">
+                  <img src="./assets/img/pages/voting-img-04.png" alt="" class="vt__thumb-03 -mousex">
+                </div><!-- vt__thumb -->
+              </div><!-- col-lg-6 -->
+              <div class="col-lg-6">
+                <div class="vt__info">
+                  <div class="vt__title wow fadeInRight">Solutions</div>
+                  <ul class="vt__list -list__numb list-unstyled">
+                    <li class="vt__list__item wow fadeInUp">Cần thiết có 1 nơi có thể cung cấp nhiều thông tin về token hơn, đặc biệt là điểm tin cậy hay đánh giá và sự ủng hộ từ cộng đồng.</li>
+                    <li class="vt__list__item wow fadeInUp">Việc user voting cho coin có thể nhận được reward tương xứng với sự phát triển của token ấy. Nó “fair” cho user ủng hộ token từ sớm và nhà phát hành có thể tăng được lượng user ủng hộ mình.</li>
+                    <li class="vt__list__item wow fadeInUp">Việc tăng điểm tin cậy cho voting có thể giải quyết bằng cách giới hạn số vote mà mỗi user có thể vote trong 1 thời gian. Ngoài ra user có thể vote free (nếu pass KYC) và vote bằng token, nếu token ấy thành công trong 1 khoảng thời gian nhất định thì sẽ nhận được reward tương ứng trong Reward Pool. Điều này làm cho user vote serious hơn, user phải tìm hiểu kỹ về token mình định vote vì nó liên quan đến quyền lợi của user.</li>
+                    <li class="vt__list__item wow fadeInUp">Về phía nhà phát hành có thể tùy theo chiến lược tăng điểm tin cậy từ cộng đồng hay phát triển thêm cộng đồng mà set pool reward tương ứng.</li>
+                    <li class="vt__list__item wow fadeInUp">Coin Analyser có thể làm các bài phân tích token và nếu cộng đồng like các phân tích này cũng sẽ được chia trong Reward Pool.</li>
+                  </ul><!-- vt__list -->
+                </div><!-- vt__info -->
+              </div><!-- col-lg-6 -->
+            </div><!-- vt__row -->
+
+            <div class="row vt__row align-items-center">
+              <div class="col-md-12">
+                <div class="vt__title text-center wow fadeInLeft">Flow</div>
+                <div class="vt__image">
+                  <div class="vt__thumb text-center wow fadeInUp">
+                    <img src="./assets/img/pages/voting-img-05.png" alt="" class="w-100">
+                  </div><!-- vt__thumb -->
+                  <div class="vt__desc mt-3 wow fadeInDown">
+                    <div class="vt__desc__item d-flex">
+                      <span class="-txt me-2">Description:</span>
+                      <span class="-info"></span>
+                    </div><!-- vt__desc__item -->
+                    <div class="vt__desc__item d-flex">
+                      <span class="-txt me-2">Note:</span>
+                      <span class="-info"></span>
+                    </div><!-- vt__desc__item -->
+                  </div><!-- vt__desc -->
+                </div>
+              </div><!-- col-md-12 -->
+            </div><!-- vt__row -->
+
+            <div class="row vt__row align-items-center">
+              <div class="col-md-12">
+                <div class="vt__title wow fadeInLeft">Token vote</div>
+                <div class="vt__detail">
+                  <div class="vt__detail__item">
+                    <div class="vt__sub__title d-flex align-items-center wow fadeInRight"><span class="-numb">1</span><span class="-txt">Rank token</span></div>
+                    <div class="vt__info">
+                      <ul class="vt__list list-unstyled">
+                        <li class="vt__list__item wow fadeInUp">Hiện tại, để bảo vệ lợi ích của user/kol thì tại mọi thời điểm giá RANK token là không thay đổi. </li>
+                        <li class="vt__list__item wow fadeInUp">RANK token được mua lại bởi Rankex 24/7 khi user sell, không mất phí mua bán, user chỉ mất phí gửi token.</li>
+                        <li class="vt__list__item wow fadeInUp">Đến khi hệ sinh thái đủ phát triển hay khi đạt đủ điều kiện cần thiết CÓ THỂ Token Rank mới IDO. Tại thời điểm này RANK thông báo trước ít nhất 2 tuần và cho phép người giữ RANK token (kể cả đang bị lock) có thể đổi sang USDT nếu muốn với giá không đổi.</li>
+                        <li class="vt__list__item wow fadeInUp">Về phía nhà phát hành có thể tùy theo chiến lược tăng điểm tin cậy từ cộng đồng hay phát triển thêm cộng đồng mà set pool reward tương ứng.</li>
+                        <li class="vt__list__item wow fadeInUp">Coin Analyser có thể làm các bài phân tích token và nếu cộng đồng like các phân tích này cũng sẽ được chia trong Reward Pool.</li>
+                      </ul><!-- vt__list -->
+                    </div>
+                  </div><!-- vt__detail__item -->
+                  <div class="vt__detail__item">
+                    <div class="vt__sub__title d-flex align-items-center wow fadeInRight"><span class="-numb">2</span><span class="-txt">Flow khi voting bằng token</span></div>
+                    <div class="vt__image wow fadeInLeft">
+                      <div class="vt__thumb text-center">
+                        <img src="./assets/img/pages/voting-img-06.png" alt="" class="w-100">
+                      </div>
+                    </div>
+                    <div class="vt__info">
+                      <ul class="vt__list list-unstyled -has-child">
+                        <li class="vt__list__item wow fadeInUp">Công thức chia dựa vào tổng số tiền user vote và pool được set bởi X founding team. Có thể set Success Pool có lượng min user là bao nhiêu và max token mỗi user. Ở mỗi thời điểm khi user login và click vào X voting hiển thị estimate số token user có thể earn nếu success với min token vote.</li>
+                        <li class="vt__list__item wow fadeInUp">Stake như bình thường đối với token X, tỉ lệ earn ra sao do X Team set. Có thể stake trực tiếp từ hệ thống hoặc chuyển về pool của team X, tùy deal.</li>
+                        <li class="vt__list__item wow fadeInUp">
+                          <p>Tỉ lệ nhận thưởng khi dùng Rank token tương tự khi dùng X token. Tỉ lệ giữa Rank và X được tính dựa theo:</p>
+                          <ul class="-child list-unstyled">
+                            <li>Trung bình trong 1 tuần sau public sell với Token sắp phát hành? Nếu chọn phương án này thì X token đồng ý swap với Rank với tỉ lệ vừa nêu.</li>
+                            <li>Trung bình trong 1 tuần với token vừa launch. Tương tự trên. Token mới launch được định nghĩa sau public sell trong vòng 5 tháng.</li>
+                            <li>Token đã phát hành (token đã launch từ 5 tháng trở lên): Đồng ý swap token với RANK với tỉ lệ trung bình trong 1 time nhất định. </li>
+                          </ul>
+                        </li>
+                        <li class="vt__list__item wow fadeInUp">Nếu Keep Rank thì tiền RANK token sẽ bị lock trong 1 khoảng thời gian ngắn hơn locking pool của X token (trung bình là 2-3 tháng trở lên). User muốn bảo toàn vốn và không bị lock $ lâu có thể chọn phương án này.</li>
+                        <li class="vt__list__item wow fadeInUp">Trường hợp Swap sang X token thì X token được tính giá tại thời điểm quyết định swap (phí mua user chịu). Sau đó X được chuyển vào Staking pool.</li>
+                      </ul><!-- vt__list -->
+                    </div>
+                  </div><!-- vt__detail__item -->
+                </div><!-- vt__detail -->
+              </div><!-- col-md-12 -->
+            </div><!-- vt__row -->
+
+            <div class="row vt__row">
+              <div class="col-md-12 text-center">
+                <div class="vt__title wow fadeInLeft">KOL / Coin Analyser</div>
+                <div class="vt__info max-985 wow fadeInUp">
+                  Commission cho KOL khác với ref cho user khi invite người khác join vào Rankex, nếu user join rankex được earn thì người giới thiệu cũng được earn.  Có thể tính hạng & nâng hạng cho KOL (dựa vào số vote đúng, số user kéo về, số bài phân tích được user upvote v.v.). Nâng hạng thì được các lợi ích...
+                </div><!-- vt__info -->
+              </div><!-- col-md-6 -->
+            </div><!-- vt__row -->
+
+            <div class="row vt__row">
+              <div class="col-md-12 text-center">
+                <div class="vt__title wow fadeInLeft">Clients token teams</div>
+                <div class="vt__team d-flex flex-wrap justify-content-between">
+                  <div class="vt__team__item wow fadeInDown">
+                    <a href="https://askventure.asia/" target="_blank">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-fund-01.png" alt="">
+                      </div>
+                    </a>
+                  </div><!-- vt__team__item -->
+                  <div class="vt__team__item wow fadeInDown">
+                    <a href="https://jventure.fund/" target="_blank">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-fund-02.png" alt="">
+                      </div>
+                    </a>
+                  </div><!-- vt__team__item -->
+                  <div class="vt__team__item wow fadeInDown">
+                    <a href="https://victorventure.com/" target="_blank">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-fund-03.png" alt="">
+                      </div>
+                    </a>
+                  </div><!-- vt__team__item -->
+                  <div class="vt__team__item wow fadeInDown">
+                    <a href="https://metavictorvc.com/" target="_blank">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-fund-04.png" alt="">
+                      </div>
+                    </a>
+                  </div><!-- vt__team__item -->
+                  <div class="vt__team__item wow fadeInDown">
+                    <a href="https://coin94.net/" target="_blank">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-fund-05.png" alt="">
+                      </div>
+                    </a>
+                  </div><!-- vt__team__item -->
+                  <div class="vt__team__item wow fadeInDown">
+                    <a href="https://wogocapital.com/" target="_blank">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-fund-06.png" alt="">
+                      </div>
+                    </a>
+                  </div><!-- vt__team__item -->
+                </div><!-- vt__team -->
+              </div><!-- col-md-6 -->
+            </div><!-- vt__row -->
+
+            <div class="row vt__row">
+              <div class="col-md-12 text-center">
+                <div class="vt__title wow fadeInLeft">User action</div>
+                <div class="vt__info max-985 wow fadeInUp">
+                  User có thể earn/contribute cho system/coin bằng nhiều action khác: like, share, invite join v.v..
+                </div><!-- vt__info -->
+              </div><!-- col-md-6 -->
+            </div><!-- vt__row -->
+          </div><!-- voting-detail__content -->
+        </div>
+      </section><!-- voting-detail -->
+
+      <!-- modal connect wallet -->
+      <div class="modal fade wl__modal -connect" id="connectWallet" tabindex="-1" aria-labelledby="connectWalletTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header -border -border__bottom">
+              <h3 class="modal-title" id="connectWalletTitle">Connect wallet</h3>
+              <button type="button" class="-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="post" class="wl__form js-attr-disable">
+                <div class="form-group scroll__wrap">
+                  <ul class="wallet-list scroll__wrap__content d-flex flex-wrap justify-content-between">
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__metamask" class="-check js-attr-checkbox">
+                      <label for="wl__metamask" class="-name order-last order-md-first"><span>Metamask</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-metamask.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__bnb" class="-check js-attr-checkbox">
+                      <label for="wl__bnb" class="-name order-last order-md-first"><span>Binance Smart Chain</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-bnb-light.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__eth" class="-check js-attr-checkbox">
+                      <label for="wl__eth" class="-name order-last order-md-first"><span>Ethereum</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-eth.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                      <input type="radio" name="token" id="wl__usdt" class="-check js-attr-checkbox">
+                      <label for="wl__usdt" class="-name order-last order-md-first"><span>BOX</span></label>
+                      <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-defibox.png" alt=""></div>
+                    </li><!-- end tk__item -->
+                  </ul>
+                </div><!-- end form-group -->
+                <button class="btn -wallet -submit -disabled js-attr-button" disabled type="submit"><span>Connect wallet</span></button>
+                <div class="-note text-center">No wallet found. Make sure extension is installed.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal connect wallet -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-info">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="footer__item footer-info__txt">
+                  Create sustainable values for partners to ensure fair revenue sharing through a diverse ecosystem. Not only meeting the trend of the times but also satisfying the needs of users.
+                </div>
+              </div>
+              <div class="col-8 col-lg-3 offset-lg-1">
+                <div class="footer__item">
+                  <div class="footer__title">CONTACT US</div>
+                  <div><a href="mailto:support@defibox.com">Support@defibox.com.</a></div>
+                  <div><a href="tel:+447458149855">+447458149855</a></div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-3">
+                <div class="footer__item">
+                  <div class="footer__title">ABOUT US</div>
+                  <a href="https://docs.defibox.com/" target="_blank">Document</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- footer-info -->
+          <div class="footer-bottom d-lg-flex align-items-center justify-content-between">
+            <div class="footer__logo">
+              <a href="index.html">
+                <img src="images/footer-logo.png" alt="Logo">
+              </a>
+            </div><!-- footer__logo -->
+            <div class="footer__social">
+              <ul class="-list">
+                <li><a href="#" target="_blank"><img src="assets/img/telegram.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/youtube.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/medium.svg" width="24" height="24" alt=""></a></li>
+                <li><a href="#" target="_blank"><img src="assets/img/twitter.svg" width="24" height="24" alt=""></a></li>
+              </ul>
+            </div><!-- footer__socical -->
+            <div class="copyright">
+              <p>Copyright © 2021 DefiBox, All Rights Reserved</p>
+            </div><!-- copyright -->
+          </div><!-- footer-bottom -->
+        </div>
+      </footer>
+
+      <nav id="menu__mobile" class="nav__mobile">
+        <div class="nav__mobile__content">
+          <div class="menu-mb__btn">
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+          </div>
+          <div class="nav__mobile--logo text-center">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+          </div>
+          <ul class="nav__mobile--ul">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item active"><a href="voting.html">Voting</a></li>
+            <li class="menu-item"><a href="staking.html">Staking</a></li>
+            <li class="menu-item"><a href="farming.html">Farming</a></li>
+            <li class="menu-item js-toggle">
+              <a href="javascript: void(0);" class="js-toggle-btn">Swap</a>
+              <ul class="sub-menu js-toggle-show">
+                <li><a href="swap.html">Exchange</a></li>
+                <li><a href="liquidity.html">Liquidity</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="launchpad.html">Launchpad</a></li>
+          </ul>
+          <div class="languages">
+            <div class="languages__label"><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></div>
+            <div class="languages__content">
+              <p class="languages__text">Select language</p>
+              <ul class="">
+                <li class="active"><a href=""><img src="./assets/flag/en.png" width="24" height="12" alt=""><span>English</span></a></li>
+                <li><a href=""><img src="./assets/flag/vi.png" width="24" height="12" alt=""><span>Vietnamese</span></a></li>
+              </ul>
+            </div>
+          </div> <!-- .languages -->
+        </div>
+      </nav>
+    </div> <!-- .wrapper -->
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

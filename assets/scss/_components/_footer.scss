@@ -5,6 +5,12 @@
 	padding: 72px 0 56px;
 	color: #111111;
 	z-index: 9;
+	@media (min-width: 992px){
+		margin-top: -40px;
+	}
+	@media (max-width: 991px) and (min-width: 768px){
+		margin-top: -48px;
+	}
 	@media (max-width: 767px){
 		padding: 68px 0 37px;
 		background-image: url('../img/footer-bg-sp.png');
@@ -133,10 +139,10 @@
 	}
 }
 
-.home{
+body:not(.home){
 	.footer{
-		@media (min-width: 768px){
-			margin-top: -40px;
+		@media (max-width: 767px){
+			margin-top: -48px;
 		}
 	}
 }
