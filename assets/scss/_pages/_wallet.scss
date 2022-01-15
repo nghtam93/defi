@@ -2534,13 +2534,37 @@
         @media (max-width: 1199px) and (min-width: 992px){
           padding: 16px 24px;
         }
-        @media (max-width: 575px){
-          padding: 16px 20px;
+        @media (max-width: 767px){
+          padding: 15px 16px;
         }
         .hv__info{
           max-width: 100%;
+          margin-right: 0;
           @media (min-width: 1366px){
             font-size: 24px;
+          }
+          @media (max-width: 991px){
+            column-gap: 2%;
+            row-gap: 15px;
+          }
+          &__item{
+            @media (max-width: 991px){
+              width: 49%;
+              min-width: 0 !important;
+            }
+          }
+          .-title{
+            @media (max-width: 991px) and (min-width: 768px){
+              font-size: 14px;
+            }
+            @media (max-width: 767px){
+              font-size: 12px;
+            }
+          }
+          .-numb__txt{
+            @media (max-width: 767px){
+              font-size: 14px;
+            }
           }
         }
       }
@@ -2775,7 +2799,7 @@
     .hv__info{
       @media (max-width: 991px){
         max-width: 100%;
-        margin: 16px 0 10px;
+        margin: 16px 0 0;
         order: 2;
         &__item{
           &:not(:last-child){
@@ -2804,7 +2828,10 @@
       @media (max-width: 991px){
         width: 100%;
         padding: 0;
+        padding-right: 40%;
         order: 2;
+        margin-top: 10px;
+        position: relative;
       }
       @media (max-width: 575px){
         font-size: 14px;
@@ -2830,6 +2857,12 @@
       }
       .-core{
         margin-top: 10px;
+        @media (max-width: 991px){
+          position: absolute;
+          right: 0;
+          top: 10px;
+          margin-top: 0;
+        }
         >.icon-info{
           color: #130F26;
           font-size: 22px;
@@ -2847,7 +2880,11 @@
           min-width: 122px;
           height: 37px;
           @media (max-width: 575px){
-            border-width: 1px;
+            border-width: 2px;
+            padding: 0 8px;
+            font-size: 14px;
+            min-width: 100px;
+            height: 32px;
           }
           &.-community{
             color: #EA3D3D;
@@ -2934,6 +2971,13 @@
               width: 110px;
             }
           }
+        }
+      }
+    }
+    &.-stak{
+      .hv__action__list{
+        @media (max-width: 991px){
+          margin-top: 26px;
         }
       }
     }
